@@ -1,0 +1,32 @@
+challenge of the day. . . .!!!!
+--------------------------------------------------------
+
+Buat proses => summary daily per area <= untuk bulan =>agustus 2016
+mapping : jumlahkan nilai total Per-area 
+==============================================================
+Area 1   = sumbagut, sumbagteng, sumbagsel
+Area 2   = jabotabek, west java
+Area 3   = central java, East java, balinusra
+Area 4   = kalimantan, sulawesi, puma
+National = nationwide
+==============================================================
+table source : fd_payload_dly
+table target :
+==============================================================
+==>> ciptakan tabel fd_load_sum_area_dly
+
+create table fd_payload_sum_area_dly 
+( period number,
+  area varchar2(10 byte),
+  payload_amount number);
+
+==========================
+hasil
+==========================
+perirod agustus
+period   | area | payload_amount
+ 
+20160101 | area
+
+
+
