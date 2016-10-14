@@ -1,6 +1,6 @@
-CREATE OR REPLACE PROCEDURE SUM_DLY 
+CREATE OR REPLACE PROCEDURE SUM_DLY_PARAM
 	( period OUT number, area OUT number, PAYLOAD_AMOUNT OUT NUMBER )
-IS
+AS
 	
 BEGIN
 
@@ -57,8 +57,8 @@ from
 --end national
 		)
 	group by period,area order by AREA
-	commit;	
+	--commit;	
 );
 --end proses masukkan data dari query filter
---commit;				
-END SUM_DLY;
+commit;				
+END SUM_DLY_PARAM;
